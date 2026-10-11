@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(92%, 520px);
+    margin: 50px auto;
+}
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+}
+
+h1 {
+    margin-top: 0;
+    color: #f8fafc;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #f8fafc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #60a5fa;
+}
+
+button,
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-top: 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover,
+.button:hover {
+    opacity: .9;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.link-text {
+    text-align: center;
+    margin-top: 24px;
+    color: #94a3b8;
+}
+
+a {
+    color: #60a5fa;
+}
+
+.alert {
+    padding: 13px 15px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.alert ul {
+    margin: 5px 0 0 20px;
+}
+
+.alert.error {
+    background: #450a0a;
+    color: #fecaca;
+    border: 1px solid #7f1d1d;
+}
+
+.alert.success {
+    background: #052e16;
+    color: #bbf7d0;
+    border: 1px solid #166534;
+}
+
+.profile-box {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.profile-box h2 {
+    margin-top: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions .button {
+    margin-top: 0;
+}
+
+.button.secondary {
+    background: #475569;
+}
+
+.button.danger {
+    background: #dc2626;
+}
+
+small {
+    color: #94a3b8;
+    font-weight: normal;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}

@@ -1,0 +1,5 @@
+# Jangan commit file konfigurasi rahasia jika nanti ditambahkan
+.env
+
+# File sementara
+*.log
